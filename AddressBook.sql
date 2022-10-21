@@ -40,3 +40,6 @@ alter table addressbook add type varchar(50);
 update addressbook set type = "family" where firstName = "shreyash" or firstName = "suyog";
 update addressbook set type = "friends" where firstName = "omkar" or firstName = "pranita" or firstName = "ganesh";
 update addressbook set type = "office" where firstName = "yogesh" or firstName = "abhishek";
+
+-- UC-10 : counting number of Contacts in by type
+select type, count(firstName) from addressbook group by type;
