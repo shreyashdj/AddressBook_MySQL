@@ -33,3 +33,10 @@ select state, count(firstName) from addressbook group by state;
 
 -- UC-8 : sort contacts alphabetically using firstName for specific city
 select * from addressbook where city = "sangli" order by firstName;
+
+-- UC-9 : alter table to add type of contact to the table
+alter table addressbook add type varchar(50);
+-- updating contacts to set the type of contact
+update addressbook set type = "family" where firstName = "shreyash" or firstName = "suyog";
+update addressbook set type = "friends" where firstName = "omkar" or firstName = "pranita" or firstName = "ganesh";
+update addressbook set type = "office" where firstName = "yogesh" or firstName = "abhishek";
