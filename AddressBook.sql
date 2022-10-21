@@ -14,3 +14,7 @@ insert into addressbook values
 ("pranita", "more", "atpadi", "sangli", "maharashtra", "415316", "9405681234", "pranita26@gmail.com"),
 ("akash", "deshmukh", "sahara", "agra", "uttar pradesh", "283105", "9484761997", "adeshmukh55@gmail.com"),
 ("suyog", "nikam", "basi", "noida", "uttar pradesh", "201301", "9896481097", "suyog88@gmail.com");
+
+-- UC-4 : edit contact details using name
+update addressbook set phoneNumber = "9632170939", email = "yogesh15@gmail.com" where firstName = "yogesh";
+update addressbook set phoneNumber = "9178339712" where firstName = "omkar" and lastName = "bhosale";
