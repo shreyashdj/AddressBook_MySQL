@@ -18,3 +18,6 @@ insert into addressbook values
 -- UC-4 : edit contact details using name
 update addressbook set phoneNumber = "9632170939", email = "yogesh15@gmail.com" where firstName = "yogesh";
 update addressbook set phoneNumber = "9178339712" where firstName = "omkar" and lastName = "bhosale";
+
+-- UC-5 : delete contact using name
+delete from addressbook where firstName = "akash";
