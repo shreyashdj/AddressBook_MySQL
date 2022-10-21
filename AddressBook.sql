@@ -43,3 +43,7 @@ update addressbook set type = "office" where firstName = "yogesh" or firstName =
 
 -- UC-10 : counting number of Contacts in by type
 select type, count(firstName) from addressbook group by type;
+
+-- UC-11 : Adding contact to both family and friends type
+insert into addressbook values("family", "nilesh", "gurav", "sahara", "agra", "uttar pradesh", "283105", "9484761997", "nilesh15@gmail.com"),
+("friends", "nilesh", "gurav", "sahara", "agra", "uttar pradesh", "283105", "9484761997", "nilesh15@gmail.com");
