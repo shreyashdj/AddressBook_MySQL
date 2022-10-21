@@ -30,3 +30,6 @@ select * from addressbook where city = "satara" or state = "uttar pradesh";
 -- UC-7 : counting number of Contacts in different cities and state
 select city, count(firstName) from addressbook group by city;
 select state, count(firstName) from addressbook group by state;
+
+-- UC-8 : sort contacts alphabetically using firstName for specific city
+select * from addressbook where city = "sangli" order by firstName;
