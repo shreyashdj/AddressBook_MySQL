@@ -26,3 +26,7 @@ delete from addressbook where firstName = "akash";
 select * from addressbook where city = "sangli";
 select * from addressbook where state = "maharashtra";
 select * from addressbook where city = "satara" or state = "uttar pradesh";
+
+-- UC-7 : counting number of Contacts in different cities and state
+select city, count(firstName) from addressbook group by city;
+select state, count(firstName) from addressbook group by state;
