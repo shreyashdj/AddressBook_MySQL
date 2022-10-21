@@ -21,3 +21,8 @@ update addressbook set phoneNumber = "9178339712" where firstName = "omkar" and 
 
 -- UC-5 : delete contact using name
 delete from addressbook where firstName = "akash";
+
+-- UC-6 : retrieve contacts from city or state
+select * from addressbook where city = "sangli";
+select * from addressbook where state = "maharashtra";
+select * from addressbook where city = "satara" or state = "uttar pradesh";
